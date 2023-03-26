@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  go-experiment:
+    image: nilspreusker/rest-server
+    build: 
+      context: .
+    container_name: rest-server
+    hostname: rest-server
+    ports: 
+      - 8080:8080

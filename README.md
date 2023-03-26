@@ -48,6 +48,20 @@ docker build -t go-experiment .
 docker run --publish 8080:8080 go-experiment
 ```
 
+#### ... or run via docker compose
+
+Start the container
+
+```
+docker-compose up --build
+```
+
+Shut it down
+
+```
+docker-compose down
+```
+
 ### Run the tests
 
 TODO
@@ -62,7 +76,8 @@ TODO
 
 - [x] Create simple REST endpoint in Go (based on https://go.dev/doc/tutorial/web-service-gin)
 - [x] Run it in a container
-- [ ] Deploy to AWS ECS
+- [x] Add docker-compose
+- [x] Deploy to AWS ECS
 
 ## 2nd Iteration
 
